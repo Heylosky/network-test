@@ -35,6 +35,7 @@ func main() {
 
 	// 如果没有命令行参数
 	if urlString == "" {
+		fmt.Println("URL_STRING is empty!")
 		zap.L().Fatal("URL_STRING is empty.")
 	}
 
