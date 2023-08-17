@@ -12,4 +12,4 @@ FROM busybox
 ENV URL_STRING=""
 COPY --from=builder /build/onett /
 RUN mkdir /onett_logs
-ENTRYPOINT ["/onett"]
+CMD ["/onett"]
